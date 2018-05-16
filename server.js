@@ -19,6 +19,10 @@ var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/ngraveo";
 mongoose.Promise = Promise;
 mongoose.connect(MONGODB_URI, {});
 
+app.post("/saveproduct",function(req,res){
+	console.log("works")
+})
+
 app.listen(3001, function() {
   console.log("App running on port 3000!");
 });
